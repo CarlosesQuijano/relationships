@@ -79,7 +79,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Avocado</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">3 pcs</span>
                   </li>
@@ -88,7 +88,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pre-cooked corn 450g</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">1 pcs</span>
                   </li>
@@ -100,7 +100,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Chicken 1kg</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">3pcs</span>
                   </li>
@@ -108,7 +108,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pork fillets 450g</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">1pcs</span>
                   </li>
@@ -116,7 +116,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Salmon 1kg</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center rounded-full  border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">1pcs</span>
                   </li>
@@ -124,7 +124,7 @@
                     <div class="flex-grow">
                       <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pork fillets 450g</h3>
                     </div>
-                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4 rounded">
+                    <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
                     <span class="text-gray-600">1pcs</span>
                   </li>
@@ -134,7 +134,7 @@
                 </ul>
 
                 <div class="mt-4 text-right">
-                 
+
         </div>
     </aside>
 
