@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string("name");
             $table->text("note")->nullable();
             $table->string("image")->nullable();
+            $table->string("price")->nullable();
+            $table->string("unidades_medida")->nullable();
             $table->foreignId("category_id")->constrained("categories")->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreignId("client_id")->constrained("clients")->cascadeOnUpdate()->restrictOnDelete();
             $table->timestamps();
         });
     }

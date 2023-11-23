@@ -73,60 +73,60 @@
 
             <div class="bg-yellow-50 p-4 rounded-lg">
                 <h2 class="text-2xl font-bold mb-4">Shopping List</h2>
-                 <p>Fruit and vegetables</p>
+                 <p>Herramientas</p>
                  <br>
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Avocado</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Destonillador</h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">3 pcs</span>
+                    <span class="text-gray-600">$3.50</span>
                   </li>
 
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pre-cooked corn 450g</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Clavos</h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">1 pcs</span>
+                    <span class="text-gray-600">$1.67 </span>
                   </li>
 
                   <br>
-                  <P>Meat and fish</P>
+                  <P>Pintura</P>
                   <br>
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Chicken 1kg</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pintura Sherwin Galon </h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">3pcs</span>
+                    <span class="text-gray-600">$27.50</span>
                   </li>
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pork fillets 450g</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> Pintura para pizarra </i></span></h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">1pcs</span>
+                    <span class="text-gray-600">$33.50</span>
                   </li>
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Salmon 1kg</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> Latex Flexible</i></span> </h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center rounded-full  border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">1pcs</span>
+                    <span class="text-gray-600">$39.50</span>
                   </li>
                   <li class="flex items-center py-2">
                     <div class="flex-grow">
-                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span>Pork fillets 450g</h3>
+                      <h3 class="text-lg "><span><i class="fa-regular fa-square fa-xl" style="color: #c96513;"></i> </i></span> Latex libre olor para uso interior</h3>
                     </div>
                     <button class="border-2 h-8 flex justify-center items-center  rounded-full border-amber-500  text-amber-500 font-bold py-2 px-4">
 
-                    <span class="text-gray-600">1pcs</span>
+                    <span class="text-gray-600">$190</span>
                   </li>
 
                   <!-- Agrega más elementos de la lista de compras aquí -->

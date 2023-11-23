@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\Category;
+use App\Models\Client;
 use App\Models\Item;
 use App\Models\Listname;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -16,10 +18,12 @@ class AgregarController extends Controller
     {
         $listnames = Listname::all();
         $categories= Category::all();
+        $clients = Client::all();
 
 
 
-        return view("item/index", compact("listnames", "categories"));
+
+        return view("item/index", compact("listnames", "categories", "clients"));
     }
 
     /**
@@ -27,15 +31,16 @@ class AgregarController extends Controller
      */
     public function create(Request $request)
     {
-
-
-
+        
 
             $item = new Item();
             $item-> name= $request->input('name');
             $item-> note = $request-> input("note");
+            $item-> price = $request->input("price");
+            $item-> unidades_medida = $request->input("unidades_medida");
             $item-> image= $request->input("image");
             $item-> category_id =$request->input("category");
+            $item-> client_id = $request->input("client");
             $item->save();
             return redirect()->route("item.index");
 

@@ -58,7 +58,7 @@
             <div class="flex w-96 text-2xl">
                 {{-- <h1 class="me-1 font-bold text-orange-400">Shoppingify</h1> --}}
                 <h1 class="font-bold">
-                    <span class="text-orange-400">Shoppingify</span>
+                    <span class="text-blue-400">Freund</span>
                     allows you to take your shopping list wherever you go
                 </h1>
             </div>
@@ -102,46 +102,75 @@
                     <div class="border-b border-gray-900/10 pb-12">
                         <br>
                         <h1 class="font-bold">
-
-                            Add new item
+                            Hacer una compra
                         </h1>
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                        <div class=" grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div class="col-span-full">
                                 <div class="sm:col-span-4">
                                     <label for="email"
-                                        class="block text-sm font-medium leading-6 text-gray-900">Nombre</label>
-                                    <div class="mt-2">
+                                        class="block text-sm font-medium leading-6 text-gray-900">Producto</label>
+                                    <div class="">
                                         <input id="#" name="name" type="text" autocomplete="email"
-                                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                            class="block w-full rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="sm:col-span-4">
+                                    <label for="email"
+                                        class="block text-sm font-medium leading-1 text-gray-900">Precio</label>
+                                    <div class="mt-1">
+                                        <input id="#" name="price" type="float" autocomplete="email"
+                                            class="block w-full rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-full">
+                                <div class="sm:col-span-2">
+                                    <label for="email"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Unidades de medida</label>
+                                    <div class="mt-2">
+                                        <input id="#" name="unidades_medida" type="text" autocomplete="email"
+                                            class="block w-full rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-span-full">
                                 <label for="about"
                                     class="block text-sm font-medium leading-6 text-gray-900">Note<span>(optional)</span></label>
-                                <div class="mt-2">
-                                    <textarea id="#" name="note" rows="3"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                                <div class="">
+                                    <textarea id="#" name="note" rows="1"
+                                        class="block w-full rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                                 </div>
                             </div>
-
                             <div class="col-span-full">
-                                <div class="sm:col-span-4">
-                                    <label for="email"
-                                        class="block text-sm font-medium leading-6 text-gray-900">Category</label>
-                                    <div class="mt-2">
-                                        <select name=category id="categories">
-                                            <option value="null" selected disabled> Escoge una categoria </option>
-                                            @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}"id="email" name="category"
-                                                    type="text" autocomplete="email"
-                                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                                    {{ $category->name }}</option>
-                                            @endforeach
-                                        </select>
+                                <div class="sm:col-span-2 flex gap-4">
+                                    <div class="w-1/2">
+                                        <label for="category" class="block text-sm font-medium leading-6 text-gray-900">Category</label>
+                                        <div class="mt-2">
+                                            <select name="category" id="categories" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                                <option value="null" selected disabled> Escoge una categoria </option>
+                                                @foreach ($categories as $category)
+                                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-1/2">
+                                        <label for="client" class="block text-sm font-medium leading-6 text-gray-900">Client</label>
+                                        <div class="mt-2">
+                                            <select name="client" id="clients" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                                <option value="null" selected disabled> Escoge cliente </option>
+                                                @foreach ($clients as $client)
+                                                    <option value="{{ $client->id }}">{{ $client->nombre }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-span-full">
                                 <label for="cover-photo" class="block text-sm font-medium leading-2 text-gray-900">Cover
                                     photo</label>
@@ -168,12 +197,12 @@
                                 </div>
                                 <div class="flex flex-row m-2 justify-between">
                                     <div>
-                                        <a class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent  px-8 py-3 text-base font-medium text-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                                        <a class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent  px-8 py-3 text-base font-medium text-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                                             href="{{ '/' }}">Cancel</button>
                                     </div>
                                     <div>
                                         <button type="submit"
-                                            class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent bg-orange-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
+                                            class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-1 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
 
                                     </div>
 

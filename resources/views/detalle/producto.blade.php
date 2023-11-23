@@ -59,7 +59,7 @@
             <div class="flex w-96 text-2xl">
                 {{-- <h1 class="me-1 font-bold text-orange-400">Shoppingify</h1> --}}
                 <h1 class="font-bold">
-                    <span class="text-orange-400">Shoppingify</span>
+                    <span class="text-blue-400">Freund</span>
                     allows you to take your shopping list wherever you go
                 </h1>
             </div>
@@ -81,15 +81,18 @@
 
             @foreach ($categories as $category)
         </div>
+
         <br>
         <div>
             <h3 class="mb-5">{{ $category->name }}</h3>
             <div id="contenido" class="grid grid-cols-4 gap-4">
                 @foreach ($category->items as $item)
                     <div class="bg-white drop-shadow-md rounded-lg py-2 px-4 flex flex-row justify-between">
-                        <button class="item-button" onclick="showItemDetails('{{ $item->name }}', '{{ $category->name }}', '{{ $item->note }}')">
+                        <button class="item-button" onclick="showItemDetails('{{ $item->name }}', '{{ $category->name }}', '{{ $item->note }}', '{{ $item->price }}', '{{ $item->client['nombre'] }}','{{ $item->unidades_medida }}','{{ $item->nombre}}',)">
                             {{ $item->name }}
                         </button>
+
+
                     </div>
                 @endforeach
                 @endforeach
@@ -112,15 +115,22 @@
                 </div>
                 <br>
                 <div class="flex flex-col pl-8">
-
-                    <h6 class="">Name</h6>
+                    <h6 class="">Name:</h6>
                     <h1 id="item-name" class="font-bold"></h1>
-                    <br>
-                    <h6 class="">Category</h6>
+
+                    <h6 class="">Category:</h6>
                     <h1 id="item-category" class="font-bold"></h1>
-                    <br>
-                    <h6 class="">Note</h6>
+
+                    <h6 class="">Note:</h6>
                     <h1 id="item-note" class="font-bold"></h1>
+                    <h6 class="">Price:</h6>
+                    <h1 id="item-price" class="font-bold"></h1>
+
+                    <h6 class="">Unidades de medida:</h6>
+                    <h1 id="item-client" class="font-bold"></h1>
+                    
+                    <h6 class="">Cliente:</h6>
+                    <h1 id="item-unidades_medida" class="font-bold"></h1>
                 </div>
                 <div class="flex flex-row m-6 justify-between">
                     <div>
@@ -130,8 +140,7 @@
                         <form action="{{ route('detalle.destroy', $item->id) }}" method="PUT">
                             @csrf
                             @method('DELETE')
-                        <button type="submit" class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent bg-orange-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Eliminar</button>
-
+                        <button type="submit" class="mt-2 flex w-50% items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Eliminar</button>
                     </form>
                     </div>
                 </div>
@@ -139,10 +148,13 @@
 
         </aside>
         <script>
-           function showItemDetails(name, category, note) {
+           function showItemDetails(name, category, note, price, unidades_medida, client) {
         document.getElementById('item-name').textContent = name;
         document.getElementById('item-category').textContent = category;
         document.getElementById('item-note').textContent = note;
+        document.getElementById('item-price').textContent = price;
+        document.getElementById('item-client').textContent = client;
+        document.getElementById('item-unidades_medida').textContent = unidades_medida;
 
 
         // Show the sidebar

@@ -4,7 +4,7 @@
             <div class="flex w-96 text-2xl">
                 {{-- <h1 class="me-1 font-bold text-orange-400">Shoppingify</h1> --}}
                 <h1 class="font-bold">
-                    <span class="text-orange-400">Shoppingify</span>
+                    <span class="text-blue-400">Freund</span>
                     allows you to take your shopping list wherever you go
                 </h1>
             </div>
